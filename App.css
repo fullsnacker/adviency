@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+    background-image: url('assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.snow-bg {
+  position: initial
+}
+
+.snow-bg:after {
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url('https://library.elementor.com/resources/christmas-snow-effect/s1.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s2.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s3.png');
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    background-position: left;
+    background-size: cover;
+    max-height: 100%;
+  }
+}

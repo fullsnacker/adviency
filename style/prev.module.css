@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap');
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.container_regalos {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+/*el elemento que envuelve al conjunto*/
+.container_regalos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.container_regalos::-webkit-scrollbar:vertical {
+    width:8px;
+}
+
+.container_regalos::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.container_regalos::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.container_regalos::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 1em;
+}
+
+.img_name_q {
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre_regalo {
+    margin-left: 8px;
+    font-size: 1rem;
+    font-family: 'Tiro Tamil', serif;
+}
+
+.destinatario {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    color: grey;
+    font-family: 'Tiro Tamil', serif;
+}
+
+.boc_img {
+    align-self: center;
+}
+
+.btn_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn_close {
+    background-color: grey;
+    color: aliceblue;
+    height: 2.1875rem;
+    width: 100px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+}
+
+.btn {
+    background-color: green;
+    color: aliceblue;
+    height: 2.1875rem;
+    width: 100px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+}
+
+@media print { /*CUANDO VOY A IMPRIMIR, NO QUIERO QUE SE VEAN LOS BOTONES DEL MODAL*/
+    .btn_close {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .container_regalos {
+        overflow-y: hidden;
+        max-height: none;
+    }
+}

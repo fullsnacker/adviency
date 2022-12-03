@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: ghostwhite;
+    font-size: 30px;
+    padding: 20px 35px;
+    /* margin-bottom: 70px;
+    margin-left: 150px; */
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.box ul {
+    font-family: 'Tiro Tamil', serif;
+    font-size: 17px;
+    list-style: none;
+    /* text-align: center; */
+}
+
+.li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container_regalos {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.container_regalos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.container_regalos::-webkit-scrollbar:vertical {
+    width:8px;
+}
+
+.container_regalos::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.container_regalos::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.container_regalos::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.6rem;
+}
+
+.box_music {
+    display: flex;
+    align-items: center;
+}
+
+.btn_music {
+    font-size: 20px;
+    background: none;
+    color: forestgreen;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn_music_pausa {
+    background: none;
+    font-size: 22px;
+    color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.emptyList {
+    font-family: 'Tiro Tamil', serif;
+    font-size: 17px;
+    text-align: center;
+    color: gray;
+    margin-top: 10px;
+}
+
+.img_name_q {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 2.5rem;
+    height: 2.4rem;
+}
+
+.rounded_circle {
+  background: red;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px;
+}
+
+.nom_pre {
+    display: flex;
+}
+
+.nom_pre span {
+    margin-left: 8px;
+}
+
+.nombre_regalo {
+    margin-left: 8px;
+    font-size: 1.18rem;
+    font-family: 'Tiro Tamil', serif;
+}
+
+.nombre_regalo_ov {
+    margin-left: 8px;
+    font-size: 1.18rem;
+    font-family: 'Tiro Tamil', serif;
+    width: 9.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.destinatario {
+    margin-left: 8px;
+    font-size: 1rem;
+    color: grey;
+    font-family: 'Tiro Tamil', serif;
+}
+
+.span_buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.edit {
+    border: none;
+    background-color: antiquewhite;
+    color: #D00000;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.trash {
+    border: none;
+    background-color: white;
+    color: peru;
+    font-size: 19px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.responsive_btn {
+    display: none;
+}
+
+.box_edit {
+    width: 3.125rem;
+}
+
+.loading {
+    font-size: 30px;
+    padding: 40px 40px 20px;
+    margin-bottom: 70px;
+}
+
+.raya {
+    margin: 1.1rem 0;
+}
+
+.containter_total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total {
+    font-family: 'Tiro Tamil', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.btn_close {
+    background-color: lightgrey;
+    color: dimgrey;
+    height: 35px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+}
+
+.btn_prev {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.previsualizar {
+    color: dimgray;
+    font-family: 'Tiro Tamil', serif;
+    font-size: 1.0625rem;
+}
+
+.trashAll_container{
+    text-align: center;
+}
+
+.trashAll {
+    height: 33px;
+    width: 100%;
+    background-color: palegoldenrod;
+    color: dimgray;
+    border-radius: 5px;
+    font-family: 'Tiro Tamil', serif;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        margin: auto;
+        width: 100%;
+        min-width: 24rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .rounded_circle {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .nom_pre {
+        flex-direction: column;
+    }
+    .nom_pre span {
+        font-size: 0.8rem;
+    }
+    .nombre_regalo {
+        font-size: 1rem;
+    }
+    .nombre_regalo_ov {
+        font-size: 1rem;
+    }
+    .destinatario {
+        font-size: 0.8rem;
+    }
+    .span_buttons {
+        display: none;
+        margin-left: 0;
+    }
+    .responsive_btn {
+        display: flex;
+    }
+    .trash {
+        margin-right: 0.3125rem;
+    }
+    .box_edit {
+        width: 4.1rem;
+    }
+    .arreglo {
+        margin: -0.9375rem;
+    }
+    .total {
+        font-size: 1rem;
+    }
+    .previsualizar .trashAll{
+        font-size: 0.875rem;
+    }
+}
+
